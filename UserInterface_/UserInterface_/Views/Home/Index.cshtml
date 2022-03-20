@@ -1,0 +1,21 @@
+﻿@model List<UserInterface_.Models.TableBill>
+<html>
+<head>
+
+</head>
+<body>
+    <div class="table table-hover">
+        @foreach (var d in Model)
+        {
+            <tr>
+                <td>@d.Id</td>
+                <td>@d.TransactionId</td>
+                <td>@d.CreditCardNumber</td>
+                <td>@d.CardType</td>
+                <td>@d.Amount</td>
+                <td>@d.DateOfTransaction</td>
+            </tr>
+        }
+    </div>
+</body>
+</html>
